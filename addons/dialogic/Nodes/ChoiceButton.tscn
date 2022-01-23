@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogic/Nodes/ChoiceButton.gd" type="Script" id=1]
+
+[node name="ChoiceButton" type="Button"]
+input_pass_on_modal_close_click = false
+size_flags_horizontal = 4
+size_flags_vertical = 4
+button_mask = 0
+text = "Testing button "
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
