@@ -1,0 +1,34 @@
+[gd_resource type="Environment" load_steps=4 format=2]
+
+[sub_resource type="Gradient" id=72]
+offsets = PoolRealArray( 0, 0.484848, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.675781, 0.599228, 0.599228, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=73]
+gradient = SubResource( 72 )
+
+[sub_resource type="ProceduralSky" id=71]
+
+[resource]
+background_mode = 4
+background_sky = SubResource( 71 )
+background_canvas_max_layer = 2
+tonemap_mode = 1
+tonemap_exposure = 0.8
+tonemap_white = 1.5
+auto_exposure_scale = 0.6
+auto_exposure_max_luma = 2.0
+dof_blur_far_transition = 0.07
+dof_blur_near_quality = 2
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_bloom = 0.01
+glow_bicubic_upscale = true
+glow_high_quality = true
+adjustment_enabled = true
+adjustment_brightness = 0.9
+adjustment_contrast = 1.21
+adjustment_saturation = 0.79
+adjustment_color_correction = SubResource( 73 )

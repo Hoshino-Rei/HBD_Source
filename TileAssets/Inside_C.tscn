@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Resources/Tilesets/Inside_C.tres" type="TileSet" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "tool
+extends TileMap
+
+
+export(Dictionary) var animations = {
+
+}
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if !tile_set: return
+	for key in animations.keys():
+		var tile_id = int(key)
+		var animation = animations[key]
+		animation.time += delta
+		if animation.time >= animation.delay:
+			animation.time = 0
+			animation.frame += 1
+			if animation.frame >= animation.animation_rects.size():
+				animation.frame = 0
+			var current_rect = animation.animation_rects[animation.frame]
+			tile_set.tile_set_region(tile_id, current_rect)
+"
+
+[node name="TileMap" type="TileMap"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 32
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+cell_tile_origin = 2
+cell_y_sort = true
+format = 1
+tile_data = PoolIntArray( 8, 11, 0, 10, 72, 0, 65539, 18, 0, 65540, 18, 0, 65541, 18, 0, 65542, 18, 0, 65543, 18, 0, 65544, 18, 0, 65545, 18, 0, 65546, 18, 0, 65549, 80, 0, 131075, 18, 0, 131076, 18, 0, 131078, 26, 0, 131079, 26, 0, 131084, 64, 0, 196612, 18, 0, 196613, 26, 0, 196614, 26, 0, 196615, 33, 0, 196616, 26, 0, 196617, 26, 0, 262149, 120, 0, 262150, 121, 0, 262151, 123, 0, 262152, 122, 0, 262153, 33, 0, 262154, 5, 0, 262155, 56, 0, 327685, 136, 0, 327686, 137, 0, 327687, 139, 0, 327688, 138, 0, 327689, 89, 0, 327692, 45, 0, 393219, 88, 0, 393222, 89, 0, 393224, 125, 0, 393225, 44, 0, 458758, 105, 0, 458760, 118, 0, 458761, 112, 0, 458762, 116, 0, 458764, 50, 0 )
+script = SubResource( 1 )
+animations = {
+}
