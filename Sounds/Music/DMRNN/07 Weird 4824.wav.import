@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/07 Weird 4824.wav-62078569eb8b3e0ab97ce2be5de5125d.sample"
+
+[deps]
+
+source_file="res://Sounds/Music/DMRNN/07 Weird 4824.wav"
+dest_files=[ "res://.import/07 Weird 4824.wav-62078569eb8b3e0ab97ce2be5de5125d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=1
