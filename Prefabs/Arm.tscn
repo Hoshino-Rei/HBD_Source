@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Characters/Rei_Boss.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Arm.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 79.2907
+
+[node name="Arm" type="Node2D"]
+script = ExtResource( 2 )
+fireRate = 0.68
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="Shoulder_L" type="Bone2D" parent="Skeleton2D"]
+position = Vector2( 0, 3.8147e-06 )
+rotation = 1.10772
+rest = Transform2D( 1, 0, 0, 1, -11, -36 )
+
+[node name="UpperArm_L" type="Bone2D" parent="Skeleton2D/Shoulder_L"]
+position = Vector2( -11, 2 )
+rotation = -0.122434
+scale = Vector2( 1, 1 )
+rest = Transform2D( 0.869511, -0.493914, 0.493914, 0.869511, -11, 2 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="LowerArm_L" type="Bone2D" parent="Skeleton2D/Shoulder_L/UpperArm_L"]
+position = Vector2( -24.7164, 35.4133 )
+rotation = -0.0181387
+rest = Transform2D( 1, 0, 0, 1, -24.7164, 35.4133 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Hand_L" type="Bone2D" parent="Skeleton2D/Shoulder_L/UpperArm_L/LowerArm_L"]
+position = Vector2( -21.0017, 32.9231 )
+rotation = 0.908079
+rest = Transform2D( 1, 0, 0, 1, -21.0017, 32.9231 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Fingers_L" type="Bone2D" parent="Skeleton2D/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L"]
+position = Vector2( -7.17208, 8.57679 )
+rotation = 2.5805
+scale = Vector2( 1, 1 )
+rest = Transform2D( -0.456124, 0.889916, -0.889916, -0.456124, -7.17208, 8.57679 )
+
+[node name="Node2D" type="Node2D" parent="Skeleton2D/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L"]
+position = Vector2( -14.1204, 1.35676 )
+
+[node name="Collider" type="Area2D" parent="Skeleton2D/Shoulder_L"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Skeleton2D/Shoulder_L/Collider"]
+position = Vector2( -27.2576, 38.9233 )
+rotation = 0.456495
+shape = SubResource( 1 )
+
+[node name="ArmL" type="Polygon2D" parent="."]
+position = Vector2( -267, -214 )
+texture = ExtResource( 1 )
+skeleton = NodePath("../Skeleton2D")
+polygon = PoolVector2Array( 246, 169.017, 253.894, 173.111, 251.848, 210.245, 251.848, 219.017, 251.848, 227.789, 248.339, 254.397, 249.216, 262, 249.216, 271.064, 247.169, 282.175, 241.906, 285.684, 241.029, 291.824, 236.935, 291.824, 231.38, 280.713, 230.21, 269.602, 232.549, 260.245, 235.181, 253.813, 232.257, 228.959, 232.842, 219.894, 233.134, 211.415, 232.549, 190.362, 236.351, 171.356 )
+uv = PoolVector2Array( 246, 169.017, 253.894, 173.111, 251.848, 210.245, 251.848, 219.017, 251.848, 227.789, 248.339, 254.397, 249.216, 262, 249.216, 271.064, 247.169, 282.175, 241.906, 285.684, 241.029, 291.824, 236.935, 291.824, 231.38, 280.713, 230.21, 269.602, 232.549, 260.245, 235.181, 253.813, 232.257, 228.959, 232.842, 219.894, 233.134, 211.415, 232.549, 190.362, 236.351, 171.356 )
+polygons = [ PoolIntArray( 5, 14, 6 ), PoolIntArray( 15, 5, 14 ), PoolIntArray( 14, 7, 6 ), PoolIntArray( 14, 13, 7 ), PoolIntArray( 13, 8, 7 ), PoolIntArray( 13, 12, 8 ), PoolIntArray( 9, 12, 8 ), PoolIntArray( 9, 11, 12 ), PoolIntArray( 9, 10, 11 ), PoolIntArray( 15, 4, 5 ), PoolIntArray( 16, 4, 15 ), PoolIntArray( 16, 3, 4 ), PoolIntArray( 17, 3, 16 ), PoolIntArray( 18, 3, 17 ), PoolIntArray( 18, 2, 3 ), PoolIntArray( 19, 1, 18 ), PoolIntArray( 1, 18, 2 ), PoolIntArray( 1, 20, 19 ), PoolIntArray( 1, 0, 20 ) ]
+bones = [ "Shoulder_L", PoolRealArray( 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5 ), "Shoulder_L/UpperArm_L", PoolRealArray( 0.5, 0.5, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1 ), "Shoulder_L/UpperArm_L/LowerArm_L", PoolRealArray( 0, 0, 0, 0.5, 1, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 0.5, 0, 0, 0 ), "Shoulder_L/UpperArm_L/LowerArm_L/Hand_L", PoolRealArray( 0, 0, 0, 0, 0, 0.5, 1, 1, 0.5, 0, 0, 0, 0.5, 1, 1, 0.5, 0, 0, 0, 0, 0 ), "Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Fingers_L", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[connection signal="body_entered" from="Skeleton2D/Shoulder_L/Collider" to="." method="_on_Collider_body_entered"]

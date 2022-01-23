@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sounds/SFXs/sound_design_effect_electricity_spark_002.wav" type="AudioStream" id=1]
+
+[sub_resource type="Gradient" id=61]
+offsets = PoolRealArray( 0, 0.366492, 0.727749, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 0.90897, 0.808594, 1, 1, 0.86779, 0.757813, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=62]
+gradient = SubResource( 61 )
+
+[sub_resource type="ParticlesMaterial" id=63]
+lifetime_randomness = 1.0
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+initial_velocity = 25.64
+initial_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 51.28
+linear_accel_random = 0.48
+color = Color( 13.29, 7.56, 5.2, 1 )
+color_ramp = SubResource( 62 )
+
+[sub_resource type="Animation" id=64]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=65]
+resource_name = "spark"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("AudioStreamPlayer2D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
+
+[node name="Spark" type="Particles2D"]
+position = Vector2( 128, -80 )
+emitting = false
+amount = 20
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+process_material = SubResource( 63 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+max_distance = 500.0
+attenuation = 1.27456
+bus = "SFXNorm"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "spark"
+method_call_mode = 1
+anims/RESET = SubResource( 64 )
+anims/spark = SubResource( 65 )

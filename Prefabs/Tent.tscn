@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Shaders/ScreenSpace/vignette.shader" type="Shader" id=1]
+[ext_resource path="res://Sprites/Vignette.png" type="Texture" id=2]
+
+[sub_resource type="ShaderMaterial" id=72]
+shader = ExtResource( 1 )
+shader_param/vignette = ExtResource( 2 )
+
+[node name="Tent" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+material = SubResource( 72 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

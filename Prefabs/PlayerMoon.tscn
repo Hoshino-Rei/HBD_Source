@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sounds/SFXs/Laser_Shoot1.wav" type="AudioStream" id=1]
+[ext_resource path="res://Sounds/SFXs/Dash.wav" type="AudioStream" id=2]
+[ext_resource path="res://Scripts/BattleSystem/PlayerMoon.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/UI/BattlePlayer.png" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="PlayerMoon" type="KinematicBody2D"]
+position = Vector2( 240, 240 )
+z_index = 4
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+dash_speed = 1000.0
+dash_duration = 2.0
+fireRate = 0.08
+ghost_rate = 0.03
+ghost_timer = 0.4
+acc = 200.0
+frac = 100.0
+dashFrac = 500.0
+maxSpeed = 25.0
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1.1, 1.1, 1.2, 1 )
+texture = ExtResource( 4 )
+region_rect = Rect2( 230, 142, 19, 22 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Spawnpoint" type="Node2D" parent="."]
+position = Vector2( 8, 0 )
+
+[node name="BulletSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+bus = "SFX"
+
+[node name="DashSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+bus = "SFX"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="I_frames" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="timeout" from="I_frames" to="." method="_on_I_frames_timeout"]

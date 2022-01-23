@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Teleporter.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=72]
+extents = Vector2( 10, 32 )
+
+[node name="TP" type="Area2D"]
+position = Vector2( 586, 160 )
+script = ExtResource( 1 )
+tpto = "res://Scenes/Lobby.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 72 )
+
+[connection signal="body_entered" from="." to="." method="_on_TP_body_entered"]
