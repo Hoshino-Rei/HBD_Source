@@ -1,0 +1,51 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "Huh!?"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "What are these things?!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Anyway I got the lighter"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "Let's get out of here, Quickly.."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641854440.json",
+		"name": "NoRat"
+	}
+}

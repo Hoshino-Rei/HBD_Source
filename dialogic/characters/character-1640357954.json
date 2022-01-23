@@ -1,0 +1,40 @@
+{
+	"color": "#ffffe8a3",
+	"description": "Hong Runa.",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1640357954.json",
+	"mirror_portraits": false,
+	"name": "Runa",
+	"nickname": "CoolRuna",
+	"nickname_bool": true,
+	"offset_x": 84,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Portraits/Runa_New/s_Runa_new_Neutral.png"
+		},
+		{
+			"name": "Runa_Angry",
+			"path": "res://Portraits/Runa_New/s_Runa_new_Angry.png"
+		},
+		{
+			"name": "Runa_Happy",
+			"path": "res://Portraits/Runa_New/s_Runa_new_Happy.png"
+		},
+		{
+			"name": "Runa_Worried",
+			"path": "res://Portraits/Runa_New/s_Runa_new_Worried.png"
+		},
+		{
+			"name": "Runa_Smug",
+			"path": "res://Portraits/Runa_New/s_Runa_new_Smug.png"
+		},
+		{
+			"name": "Runa_extra_Worried",
+			"path": "res://Portraits/Runa_New/s_Runa_new_extra_Worried.png"
+		}
+	],
+	"scale": 100
+}

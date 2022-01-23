@@ -1,0 +1,225 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Fonts/DPComic.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/Credits.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/Music/AaronKrogh/204-B Snowy Area (Loop).mp3" type="AudioStream" id=3]
+[ext_resource path="res://Sprites/Characters/Commanders.png" type="Texture" id=4]
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.494624, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=11]
+gradient = SubResource( 2 )
+
+[sub_resource type="Curve" id=10]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.517241, 0.976136 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=12]
+curve = SubResource( 10 )
+
+[sub_resource type="Curve" id=6]
+_data = [ Vector2( 0, 0.172727 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=13]
+curve = SubResource( 6 )
+
+[sub_resource type="ParticlesMaterial" id=9]
+lifetime_randomness = 0.4
+trail_divisor = 30
+trail_size_modifier = SubResource( 13 )
+emission_shape = 2
+emission_box_extents = Vector3( 240, 136, 1 )
+flag_rotate_y = true
+flag_disable_z = true
+gravity = Vector3( 0, 9.3, 0 )
+initial_velocity = 132.35
+angular_velocity = 63.53
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 36.76
+damping_random = 1.0
+angle = 21.8
+angle_random = 0.28
+scale = 8.0
+scale_random = 1.0
+scale_curve = SubResource( 12 )
+color_ramp = SubResource( 11 )
+hue_variation = -0.06
+hue_variation_random = 0.52
+
+[sub_resource type="ProceduralSky" id=1]
+
+[sub_resource type="Environment" id=5]
+background_mode = 4
+background_sky = SubResource( 1 )
+background_canvas_max_layer = 2
+tonemap_mode = 2
+auto_exposure_scale = 0.2
+auto_exposure_max_luma = 2.38
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_levels/6 = true
+glow_levels/7 = true
+glow_bloom = 0.04
+glow_blend_mode = 1
+glow_bicubic_upscale = true
+glow_high_quality = true
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+main_menu = "res://Scenes/MainMenu.tscn"
+max_distance = -1696
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scroll" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -144.0
+margin_top = 18.0
+margin_right = 144.0
+margin_bottom = 786.0
+
+[node name="Label" type="Label" parent="Scroll"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -80.0
+margin_right = 80.0
+margin_bottom = 1593.0
+custom_fonts/font = ExtResource( 1 )
+text = "A game by:
+ieR(Rei).
+
+To the lovely: 
+Hong Runa.
+
+Happy BirthDay!!
+
+___
+
+Art:
+Ayene(Ayene-chan).
+
+(c) Enterbrain, RMVXA.
+
+ieR(Rei).
+
+Ten(@eternals)
+___
+
+Music:
+
+Ronnie(@1damnronnie).
+
+Eon(EonSound).
+
+Aaron Krogh(@AaronKrogh).
+
+___
+
+Sound Effects:
+
+BFXR.
+
+(c) Enterbrain, RMVXA.
+
+Zapsplat.com.
+
+___
+
+Assets:
+
+Dialogic:
+(c) Emilio Coppola, Jowan-Spooner and more!
+
+RPGMaker AutoTiler:
+(c) Newold.
+
+Godot Transitions:
+(c) Nemesis.
+
+___
+
+Programming:
+
+ieR(Rei).
+
+___
+
+Special Thanks:
+
+The Godot game engine and it's amazing community!
+
+HeartBeast(Benjamin).
+
+Runa(@HongRuna).
+Snova(@snova_luxul).
+Babu(@BelieveinSad).
+Yuu(@EuropaYuu).
+Reiner(@ReinergardS).
+Tengen(@MajestyofColors).
+Suki.
+Nana.
+Mel.
+
+and Runa's community, y'all are POG!!!
+
+and finally you!!
+
+
+
+
+
+
+
+
+
+
+
+
+Thanks for playing!!
+
+
+"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Commanders" type="Sprite" parent="Scroll"]
+position = Vector2( 144, 1696 )
+texture = ExtResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+bus = "Music"
+
+[node name="Particles2D3" type="Particles2D" parent="."]
+position = Vector2( 96, 96 )
+amount = 2000
+lifetime = 3.0
+randomness = 0.32
+draw_order = 1
+process_material = SubResource( 9 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 5 )

@@ -1,0 +1,279 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Sprites/MM/MainMenu_0000s_0002_Layer-1.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/MM/MainMenu_0003_NEW-GAME.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/MM/LightRays.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/MM/MainMenu_0005_Quit.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/MM/MainMenu_0004_Credits--.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/MM/MainMenu_0002_Layer-8.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/MM/MainMenu_0001_HBD-Runa.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/MM/MainMenu_0006_Ver.-0.1a2.png" type="Texture" id=8]
+[ext_resource path="res://Sounds/Music/AaronKrogh/308 - The Tea Garden Enhanced Version (Scene).mp3" type="AudioStream" id=9]
+[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=10]
+[ext_resource path="res://Sounds/SFXs/Select.wav" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/SFXs/Reflection.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/SFXs/Sleep.ogg" type="AudioStream" id=13]
+
+[sub_resource type="CanvasItemMaterial" id=9]
+blend_mode = 1
+light_mode = 1
+
+[sub_resource type="Gradient" id=11]
+offsets = PoolRealArray( 0, 0.269231, 0.682692, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 1, 1, 1, 1, 0.328125, 0.789383, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=12]
+gradient = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=10]
+lifetime_randomness = 0.34
+emission_shape = 1
+emission_sphere_radius = 57.11
+flag_disable_z = true
+gravity = Vector3( 0, 0, 0 )
+angular_velocity = 5.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 3.0
+color_ramp = SubResource( 12 )
+
+[sub_resource type="Gradient" id=13]
+offsets = PoolRealArray( 0, 0.25, 0.615385, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 12.72, 15.12, 24.86, 1, 65.89, 14.54, 30.06, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=14]
+gradient = SubResource( 13 )
+
+[sub_resource type="ParticlesMaterial" id=15]
+emission_shape = 2
+emission_box_extents = Vector3( 240, 136, 1 )
+flag_disable_z = true
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 10.0
+linear_accel_random = 1.0
+radial_accel = 10.0
+radial_accel_random = 1.0
+color = Color( 1.2, 1.50196, 3.56863, 1 )
+color_ramp = SubResource( 14 )
+
+[sub_resource type="ProceduralSky" id=1]
+
+[sub_resource type="Environment" id=16]
+background_mode = 4
+background_sky = SubResource( 1 )
+background_canvas_max_layer = 2
+tonemap_mode = 2
+auto_exposure_scale = 0.2
+auto_exposure_max_luma = 2.38
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_levels/6 = true
+glow_levels/7 = true
+glow_bicubic_upscale = true
+glow_high_quality = true
+adjustment_enabled = true
+adjustment_contrast = 1.29
+adjustment_saturation = 1.48
+
+[sub_resource type="Theme" id=17]
+
+[sub_resource type="StyleBoxFlat" id=8]
+content_margin_left = 125.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+corner_radius_top_left = 8
+corner_radius_bottom_right = 20
+expand_margin_right = 6.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_left = 125.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.933333, 0.933333, 0.933333, 0.694118 )
+corner_radius_top_left = 8
+corner_radius_bottom_right = 20
+expand_margin_right = 6.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=7]
+content_margin_left = 125.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.490196, 0.490196, 0.490196, 0.509804 )
+border_width_left = 3
+corner_radius_top_left = 8
+corner_radius_bottom_right = 20
+expand_margin_right = 6.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=6]
+content_margin_left = 125.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.364706, 0.364706, 0.364706, 0.427451 )
+corner_radius_top_left = 8
+corner_radius_bottom_right = 20
+expand_margin_right = 6.0
+anti_aliasing = false
+
+[sub_resource type="CanvasItemMaterial" id=18]
+blend_mode = 3
+
+[sub_resource type="CanvasItemMaterial" id=19]
+blend_mode = 1
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+start_scene = "res://Scenes/Runa_RoomC.tscn"
+credits_scene = "res://Scenes/Credits.tscn"
+select = ExtResource( 11 )
+click = ExtResource( 12 )
+exit = ExtResource( 13 )
+
+[node name="BG" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 2.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Particles2D" type="Particles2D" parent="."]
+modulate = Color( 1, 1, 1, 0.0470588 )
+material = SubResource( 9 )
+position = Vector2( 240, 64 )
+amount = 50
+lifetime = 5.0
+draw_order = 1
+process_material = SubResource( 10 )
+texture = ExtResource( 3 )
+
+[node name="Particles2D2" type="Particles2D" parent="."]
+position = Vector2( 240, 164 )
+amount = 2000
+lifetime = 5.0
+process_material = SubResource( 15 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 16 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = -86.0
+margin_right = 116.0
+margin_bottom = -3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+margin_right = 125.0
+margin_bottom = 22.0
+theme = SubResource( 17 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Start"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -51.0
+margin_top = -9.5
+margin_right = 51.0
+margin_bottom = 9.5
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+margin_top = 26.0
+margin_right = 125.0
+margin_bottom = 48.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Credits"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -51.0
+margin_top = -9.5
+margin_right = 51.0
+margin_bottom = 9.5
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+margin_top = 52.0
+margin_right = 125.0
+margin_bottom = 74.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Quit"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -51.0
+margin_top = -9.5
+margin_right = 51.0
+margin_bottom = 9.5
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu0002Layer-8" type="Sprite" parent="."]
+material = SubResource( 18 )
+position = Vector2( 83, 21 )
+texture = ExtResource( 6 )
+
+[node name="MainMenu0001Hbd-Runa" type="Sprite" parent="."]
+material = SubResource( 19 )
+position = Vector2( 79, 18 )
+texture = ExtResource( 7 )
+
+[node name="MainMenu0006Ver-01A2" type="Sprite" parent="."]
+position = Vector2( 450, 262 )
+texture = ExtResource( 8 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+bus = "Music"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+volume_db = -4.996
+bus = "SFX"
+
+[connection signal="focus_entered" from="VBoxContainer/Start" to="." method="_on_focus_entered"]
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/Credits" to="." method="_on_focus_entered"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/Quit" to="." method="_on_focus_entered"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

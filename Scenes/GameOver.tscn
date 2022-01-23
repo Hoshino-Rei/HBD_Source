@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/DPComic.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Sprites/MM/MainMenu_0009_Background.png" type="Texture" id=3]
+[ext_resource path="res://Sounds/SFXs/Gameover1.ogg" type="AudioStream" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+target = "res://Scenes/MainMenu.tscn"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -33.0
+margin_top = -8.0
+margin_right = 33.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 2 )
+text = "GAME OVER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+bus = "Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]

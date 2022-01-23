@@ -1,0 +1,334 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Runa_Worried",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]wah so dark.."
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]hehehe"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 5
+		},
+		{
+			"action": "join",
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]Welcome to my lair!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw]The bathroom??"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]s--shutup!!"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 4
+		},
+		{
+			"action": "join",
+			"character": "character-1641973390.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641973382.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641973377.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]Runa!!"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"action": "join",
+			"character": "character-1641973364.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641973369.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641973373.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]You came!! but"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"action": "join",
+			"character": "character-1641973715.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]THIS IS A TRAP!!"
+		},
+		{
+			"character": "character-1641973715.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]LEAVE QUICKLY!!"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"action": "join",
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]To late [shake rate=20 level=20]hahHAhaaha[/shake]"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]The door is already closed!"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]You have no choice but to fight me!!"
+		},
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw=1]Why?"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=1]a"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]For no reason at all!! [shake rate=20 level=20]hahHAhaaha[/shake]"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]If you win I'll let everyone go"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=1][wave amp=50 freq=2]B U T[wave]"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw]If you lose we'll keep on fighting till the next year!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Angry",
+			"text": "[nw]Bring it on ieR!!!"
+		},
+		{
+			"character": "character-1641973096.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=1][speed=10]. . ."
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.5
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641972968.json",
+		"name": "Bathroom_Cutscene"
+	}
+}

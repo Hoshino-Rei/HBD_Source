@@ -1,0 +1,237 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw]Eh?"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw]Where is everyone!??!"
+		},
+		{
+			"action": "join",
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " [nw=1]Runa!!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Happy",
+			"text": "[nw=0.3] Snova!! where were you? I could'nt anyno-"
+		},
+		{
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=1]There's no time to explain!!"
+		},
+		{
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=0.5]Take this!!"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1.5
+		},
+		{
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=0.5]This is the only thing that works aginst his we-"
+		},
+		{
+			"action": "leaveall",
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_003"
+		},
+		{
+			"character": "character-1641750844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[nw=0.5]Ugh-"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw=0.7]*Gasp*"
+		},
+		{
+			"action": "leaveall",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 2.5
+		},
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw=0.5]Snova!!"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 0.3
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw=0.5]Eugh!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "[nw=0.8]A spider web!?"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "[nw] hmmm"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 0.3
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Happy",
+			"text": "[nw]It looks easliy flameable!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Happy",
+			"text": "[nw=1] wait for me Snova, I'll save you!!"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 2.9
+		},
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Happy",
+			"text": "[nw=0.5] Oh!!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Happy",
+			"text": "[nw=0.8] Snova dropped his lighter!"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 2.7
+		},
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Angry",
+			"text": "[nw=0.8]A RAT!!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Angry",
+			"text": "[nw=0.8]Get back here!!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641750889.json",
+		"name": "Cutscene_01"
+	}
+}
