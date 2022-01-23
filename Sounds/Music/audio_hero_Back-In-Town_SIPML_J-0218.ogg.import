@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/audio_hero_Back-In-Town_SIPML_J-0218.ogg-4d77c78f10a396fd91889ff504b7fc50.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Music/audio_hero_Back-In-Town_SIPML_J-0218.ogg"
+dest_files=[ "res://.import/audio_hero_Back-In-Town_SIPML_J-0218.ogg-4d77c78f10a396fd91889ff504b7fc50.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

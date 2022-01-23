@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/308 - The Tea Garden Enhanced Version (Scene).mp3-fb020458f9c8ed92c1cd2bb661d96504.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/AaronKrogh/308 - The Tea Garden Enhanced Version (Scene).mp3"
+dest_files=[ "res://.import/308 - The Tea Garden Enhanced Version (Scene).mp3-fb020458f9c8ed92c1cd2bb661d96504.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

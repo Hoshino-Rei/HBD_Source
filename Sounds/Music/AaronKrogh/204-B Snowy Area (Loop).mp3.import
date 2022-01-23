@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/204-B Snowy Area (Loop).mp3-82234bf55afb7cd5889c62c72dbed525.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/AaronKrogh/204-B Snowy Area (Loop).mp3"
+dest_files=[ "res://.import/204-B Snowy Area (Loop).mp3-82234bf55afb7cd5889c62c72dbed525.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

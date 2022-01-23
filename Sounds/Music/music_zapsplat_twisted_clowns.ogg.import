@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/music_zapsplat_twisted_clowns.ogg-60b42ad3e7412bc1c5475689557634ee.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Music/music_zapsplat_twisted_clowns.ogg"
+dest_files=[ "res://.import/music_zapsplat_twisted_clowns.ogg-60b42ad3e7412bc1c5475689557634ee.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
