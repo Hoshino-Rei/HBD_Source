@@ -1,0 +1,20 @@
+{
+	"color": "#ffa5e4af",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1641973096.json",
+	"mirror_portraits": false,
+	"name": "Rei",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Portraits/Rat.png"
+		}
+	],
+	"scale": 100
+}

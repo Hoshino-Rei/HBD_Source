@@ -1,0 +1,53 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Angry",
+			"text": "The rat went down here?"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "Huh?!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "A basement?!?"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "Since when did we have a basement?!"
+		},
+		{
+			"character": "character-1640357954.json",
+			"event_id": "dialogic_001",
+			"portrait": "Runa_Worried",
+			"text": "I feel something ominous down there.."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641850920.json",
+		"name": "Rat"
+	}
+}

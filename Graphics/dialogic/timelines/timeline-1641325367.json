@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I love this fireplace, it's warm and cozy~"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1641325367.json",
+		"name": "TalkWithFireplace"
+	}
+}
