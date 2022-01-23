@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/human_crowd_applause_snooker_match_001.wav-a382e329f39b3529001d32b3b299f81a.sample"
+
+[deps]
+
+source_file="res://Sounds/SFXs/human_crowd_applause_snooker_match_001.wav"
+dest_files=[ "res://.import/human_crowd_applause_snooker_match_001.wav-a382e329f39b3529001d32b3b299f81a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

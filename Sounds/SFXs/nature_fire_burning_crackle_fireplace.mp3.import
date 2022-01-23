@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nature_fire_burning_crackle_fireplace.mp3-e2ba2036b5f3b75884f301348de9eb12.mp3str"
+
+[deps]
+
+source_file="res://Sounds/SFXs/nature_fire_burning_crackle_fireplace.mp3"
+dest_files=[ "res://.import/nature_fire_burning_crackle_fireplace.mp3-e2ba2036b5f3b75884f301348de9eb12.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

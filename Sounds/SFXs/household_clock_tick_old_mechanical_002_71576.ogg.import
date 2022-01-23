@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/household_clock_tick_old_mechanical_002_71576.ogg-0fa147a90451c3378e3678016f97a160.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFXs/household_clock_tick_old_mechanical_002_71576.ogg"
+dest_files=[ "res://.import/household_clock_tick_old_mechanical_002_71576.ogg-0fa147a90451c3378e3678016f97a160.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

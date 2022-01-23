@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/KnockH01.ogg-04489288860d60281534cfd870aa8946.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFXs/KnockH01.ogg"
+dest_files=[ "res://.import/KnockH01.ogg-04489288860d60281534cfd870aa8946.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

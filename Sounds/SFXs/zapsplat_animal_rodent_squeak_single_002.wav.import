@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/zapsplat_animal_rodent_squeak_single_002.wav-94dfe8645f942365b713724147b5239c.sample"
+
+[deps]
+
+source_file="res://Sounds/SFXs/zapsplat_animal_rodent_squeak_single_002.wav"
+dest_files=[ "res://.import/zapsplat_animal_rodent_squeak_single_002.wav-94dfe8645f942365b713724147b5239c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

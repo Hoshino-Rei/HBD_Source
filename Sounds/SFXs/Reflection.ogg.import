@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Reflection.ogg-c93b20c7d89e5193c261ea9eaea0412c.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFXs/Reflection.ogg"
+dest_files=[ "res://.import/Reflection.ogg-c93b20c7d89e5193c261ea9eaea0412c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
